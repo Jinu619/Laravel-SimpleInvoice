@@ -5,7 +5,7 @@
     <form action="additem" name="item" id="item" method="post">
         @csrf
         <div class="banner" style="background:url({{asset('without_back_logo.png')}}) ;background-repeat: no-repeat;background-size: 50% 100%;">
-            <h1>New Invoice Entry</h1>
+            <h1 class="font-effect-outline">New Invoice Entry</h1>
         </div>
 
 

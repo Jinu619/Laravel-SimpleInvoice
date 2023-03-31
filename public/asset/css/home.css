@@ -5,7 +5,8 @@ body, div, form, input, select, textarea, label, p {
     padding: 0;
     margin: 0;
     outline: none;
-    font-family: Roboto, Arial, sans-serif;
+    /* font-family: Roboto, Arial, sans-serif; */
+    font-family: "Audiowide", sans-serif;
     font-size: 14px;
     color: #666;
     line-height: 22px;
