@@ -8,6 +8,14 @@ use Illuminate\Support\Facades\Hash;
 
 class registerController extends Controller
 {
+    public function index(){
+        if(isset(auth()->user()->id)){
+            return redirect('invoices');
+        }else{
+            return view('welcome');
+        }
+        
+    }
     public function register(Request $request){
 //        dd($request->all());
         $request->validate([
@@ -33,7 +41,7 @@ class registerController extends Controller
         ]);
         $input=['name'=>$request->uname,'password'=>$request->password];
         if(auth()->attempt($input)){
-            return redirect('home');
+            return redirect('invoices');
         }
         else{
             return redirect('login');
