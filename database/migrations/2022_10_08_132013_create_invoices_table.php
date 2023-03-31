@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
             $table->string('customer_name','255');
-            $table->string('phone','100');
+            $table->string('phone','100')->nullable();
             $table->string('address1','255');
-            $table->string('address2','255');
-            $table->string('state','255');
+            $table->string('address2','255')->nullable();
+            $table->string('state','255')->nullable();
             $table->timestamp('deleted_at')->nullable();
             $table->timestamps();
         });
