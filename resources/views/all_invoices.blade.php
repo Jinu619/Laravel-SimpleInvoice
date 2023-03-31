@@ -4,8 +4,8 @@
 <div class="testbox">
     <form action="additem" name="item" id="item" method="post">
         @csrf
-        <div class="banner" style="background:url({{asset('without_back_logo.png')}}) ;background-repeat: no-repeat;background-size: 50% 100%;">
-            <h1>Invoice Lists</h1>
+        <div class="banner tab-content" style="background:url({{asset('without_back_logo.png')}}) ;background-repeat: no-repeat;background-size: 50% 100%;">
+            <h1 class="font-effect-outline">Invoice Lists</h1>
         </div>
         <table class="table table-dark table-striped">
         <tr>
