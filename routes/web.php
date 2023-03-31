@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/',[\App\Http\Controllers\registerController::class,'index']);
 Route::post('register',[\App\Http\Controllers\registerController::class,'register']);
 Route::get('login',[\App\Http\Controllers\registerController::class,'login']);
 Route::post('dologin',[\App\Http\Controllers\registerController::class,'dologin']);
